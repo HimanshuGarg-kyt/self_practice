@@ -1,3 +1,3 @@
-t= ("hello",)
-t[0].replace("he","ad")
-print(t)
+import keyword
+a = list(keyword.kwlist)
+print(len(a))
