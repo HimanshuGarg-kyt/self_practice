@@ -1,3 +1,2 @@
-import keyword
-a = list(keyword.kwlist)
-print(len(a))
+a = ["biuj", "bhu", "bhu", "bhu"]
+print(enumerate(a,start=1))

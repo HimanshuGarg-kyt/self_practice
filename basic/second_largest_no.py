@@ -13,7 +13,7 @@ def second_largest(nums):
     return second if second != float('-inf') else None
 
 # Example
-numbers = [10, 25, 8, 25, 17]
+numbers = [10, 25, 8, 25,15313,5,53, 17]
 result = second_largest(numbers)
 if result is not None:
     print("Second largest =", result)
