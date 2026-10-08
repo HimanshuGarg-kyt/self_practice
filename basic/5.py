@@ -1,5 +1,5 @@
 vowel = "aeiou"
-a = "aaii"
+a = input("enter : ")
 list1 = {}
 for i in vowel:
     b = a.count(i)
