@@ -7,7 +7,6 @@ while i>j:
     if c[i]==c[j]:
         i-=1
         j+=1
-        continue
     else:
         print("NOT PALINDROME")
         break

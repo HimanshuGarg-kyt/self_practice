@@ -4,6 +4,6 @@ for i in range(3):
     a = input("enter password : ")
     if a == password:
         print("ACCESS GRANTED")
-        exit()
+        break
 else:
     print("ACCESS DENIED")  
