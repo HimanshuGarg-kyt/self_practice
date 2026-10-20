@@ -9,7 +9,7 @@
 
 # QUE 2
 # def initials(full_name):
-#     if full_name == " ":
+#     if full_name == " " or full_name == "":
 #         return ""
 #     else:
 #         a  =  full_name.split()
@@ -36,7 +36,7 @@
 #         return a 
 
 # a = input("ENTER : ")
-# print(mask_string(a,9))
+# print(mask_string(a))
 
 # QUE 4
 # def analyze_string(text):
@@ -127,7 +127,7 @@
 
 # QUE 15
 # def remove_duplicates_preserve_order(text):
-#     list1 = []
+#     list1 = []0000
 #     for ch in text:
 #         if ch not in list1:
 #             list1.append(ch)
