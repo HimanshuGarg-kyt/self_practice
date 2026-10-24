@@ -5,6 +5,8 @@
 # a = input("enter a name : ")
 # print(greetings(a))
 
+
+
 # QUE 2
 # def add(a,b):
 #     return a + b
@@ -13,6 +15,8 @@
 # b = float(input("ENTER SECOND NUMBER : "))
 # print(add(a,b))
 
+
+
 # QUE 3
 # def calculate_age(name,birth_year):
 #     return f"{name.title()} is {2026-birth_year} years old."
@@ -20,6 +24,8 @@
 # a = input("ENTER YOUR NAME : ")
 # b = int(input("ENTER YOUR BIRTH YEAR : "))
 # print(calculate_age(a,b))
+
+
 
 # QUE 4
 # def fun(a):
@@ -31,12 +37,16 @@
 # a = int(input("ENTER NUMBER : "))
 # print(fun(a))
 
+
+
 # QUE 5
 # def string_info(text):
 #     return f"first character : {text[0]}\nlast character : {text[-1]}\nnumber of character : {len(text)}\nstring in upercase : {text.upper()}"
 
 # a = input("ENTER YOUR TEXT : ")
 # print(string_info(a))
+
+
 
 # QUE 6
 # def count_vowels(text):
@@ -49,6 +59,8 @@
 # a = input("ENTER STRING : ")
 # print(count_vowels(a))
 
+
+
 # QUE 7
 # def repeat_text(text, n):
 #     print((text+ " ")*n ,sep = " ")
@@ -57,6 +69,8 @@
 # b = int(input("enter number of times : "))
 # repeat_text(a,b)
 
+
+
 # QUE 8
 # def larger(a,b):
 #     return a if a>b else b
@@ -64,12 +78,16 @@
 # print(larger(20,30))
 # print(larger("him","garg"))
 
+
+
 # QUE 9
 # def clean_name(name) :
 #     return name.strip().title()
 
 # a = input("enter your name : ")
 # print(clean_name(a))
+
+
 
 # QUE 10
 # def add1(a, b):
@@ -84,11 +102,15 @@
 # y = add2(10, 20)
 # print(y)
 
+
+
 # QUE 11
 # def power(base, exponent=2):
 #     return base**exponent
 
 # print(power(5,exponent = 5))
+
+
 
 # QUE 12
 # def  student_result(name, marks=0) :
@@ -99,11 +121,15 @@
 
 # print(student_result("gdc",50))
 
+
+
 # QUE 13
 # def format_student(name, roll, branch):
 #     return f"{name} has roll no. {roll} and branch {branch}."
 
 # print(format_student(name = "HIMANSHU",roll = "B26195",branch="CSE"))
+
+
 
 # QUE 14
 # def reverse_string(text):
@@ -114,6 +140,8 @@
 
 # a = input("enter text : ")
 # print(reverse_string(a))
+
+
 
 # QUE 15
 # def _palindrome(text):
@@ -131,6 +159,8 @@
 # a = input("ENTER TEXT : ")
 # print(_palindrome(a))
 
+
+
 # QUE 16
 # def remove_vowels(text):
 #     a = ""
@@ -143,6 +173,8 @@
 
 # a = input("ENTER TEXT : ")
 # print(remove_vowels(a))
+
+
 
 # QUE 17
 # def calculator(a, b, operation):
@@ -162,6 +194,8 @@
 # c = input("ENTER OPERATION : ")
 # print(calculator(a,b,c))
 
+
+
 # QUE 18
 # def test(): 
 #     x = 20 
@@ -169,6 +203,8 @@
 # x = 10 
 # test() 
 # print("outside:", x)
+
+
 
 # QUE 19
 # def test(): 
@@ -179,6 +215,8 @@
 # print(x)
 # test() 
 # print("outside:", x)
+
+
 
 # QUE 20
 # def outer():
@@ -191,12 +229,16 @@
 
 # outer()
 
+
+
 # QUE 22
 # def my_sum(*args):
 #     print(type(args))
 #     return sum(args)
 
 # print(my_sum(1,2,3,4,5))
+
+
 
 # QUE 23
 # def uppercase(a):
@@ -221,13 +263,17 @@
 #     else:
 #         print("select appropriate operation")
 
+
+
 # QUE 24
 # list1 = [1,2,3,4,5,6,7,8,9,10]
 # list2 = list(filter(lambda x:x%2==0,list1))
 # list3 = list(map(lambda x:x**2,list2))
 # print("original list : ",list1)
 # print("filtered list : " ,list2)
-# print("final list : " , list3)
+# print("final list :" , list3)
+
+
 
 # QUE 25
 # names = ["Himanshu","Honey Singh","Ayush","Rajat"]
@@ -240,6 +286,8 @@
 
 #     print(i, name, mark, result(mark))
 
+
+
 # QUE 26
 # def factorial(n):
 #     if n == 0:
@@ -248,6 +296,8 @@
 
 # n = int(input("ENTER NUMBER : "))
 # print(factorial(n))
+
+
 
 # QUE 27
 # def encrypt(text, shift):
@@ -268,6 +318,8 @@
 # print(encrypt(a,5))
 # print(decrypt(encrypt(a, 5), 5) == a )
 
+
+
 # QUE 28
 # def word_report(para):
 #     a = ""
@@ -283,6 +335,8 @@
 
 # a = input("ENTER PARA : ")
 # print(word_report(a))
+
+
 
 # QUE 29
 # PART 1
@@ -334,6 +388,7 @@
 # b = int(input("enter number of bits : "))
 # print(twos_complement(a,b))
 
+
 # PART 3
 # def find_unique(lst):
 #     a = 0
@@ -341,6 +396,8 @@
 #         a = a^i
 #     return a
 # print(find_unique([4, 2,7, 7,  4]))
+
+
 
 # QUE 30
 # def to_binary(n):
