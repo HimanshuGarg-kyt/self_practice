@@ -1,3 +1,17 @@
+#using recursion
+def p(s):
+    if len(s) == 1:
+        return True
+
+    elif len(s) == 0:
+            return True
+    
+    elif s[0]==s[len(s)-1]:
+        return p(s[1:len(s)-1])
+
+    else:
+        return False
+
 a = input("enter : ")
 b = a.upper()
 c=b.replace(" ","")

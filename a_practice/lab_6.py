@@ -20,6 +20,8 @@
 #         b *= i
 # print("Factorial without recursion:", b)
 
+
+
 # QUE 2
 # def fibonacci(n):
 #     if n < 1:
@@ -55,34 +57,44 @@
 
 # print(", ".join(list1))
 
+
+
 # QUE 3
-# def to(n):
+# def to_binary(n):
 #     if n == 0:
 #         return "0"
 #     elif n == 1:
 #         return "1"
 #     else:
-#         return to(n // 2) + str(n % 2)
+#         return to_binary(n // 2) + str(n % 2)
 
 # a = int(input("Enter a number: "))
-# print(to(a))
+# print(to_binary(a))
+
+
 
 # QUE 4
 # def p(s):
 #     if len(s) == 1:
-#         return "string is palindrome"
+#         return True
 
 #     elif len(s) == 0:
-#             return "string is palindrome"
+#             return True
     
 #     elif s[0]==s[len(s)-1]:
 #         return p(s[1:len(s)-1])
 
 #     else:
-#         return "string is not palindrome"
+#         return False
 
 # a = input("ENETR A STRING : ")
-# print(p(a))
+# b = p(a)
+# if b:
+#     print(f"{a} is palindrome")
+# else:
+#     print(f"{a} is not palindrome")
+
+
 
 # QUE 5
 # def sum_digit(n):
@@ -98,6 +110,8 @@
 # a = int(input("ENETR A NUMBER : "))
 # print(sum_digit(a))
 
+
+
 # QUE 6
 # def power(x, n):
 #     if n == 0:
@@ -106,6 +120,8 @@
 #         return x * power(x, n - 1)
 
 # print(power(5, 3))
+
+
 
 # QUE 7
 # def sum_list(a):
@@ -118,14 +134,18 @@
 # b = a.split()
 # print(sum_list(b))
 
+
+
 # QUE 8
-# def r(s):
+# def reverse_string(s):
 #     if len(s) == 1:
 #         return s[0]
 #     else:
-#         return s[-1] + r(s[:-1])
+#         return s[-1] + reverse_string(s[:-1])
 
-# print(r("Recursion"))
+# print(reverse_string("Recursion"))
+
+
 
 # QUE 9
 # def find_max(n):
@@ -143,6 +163,8 @@
 # b = a.split()
 # print(find_max(b))
 
+
+
 # QUE 10
 # def count_vowel(s):
 #     a = "aeiouAEIOU"
@@ -157,6 +179,8 @@
 
 # a = input("ENTER A STRING : ")
 # print(count_vowel(a))
+
+
 
 # QUE 11
 # def diagonal_sum(mat, i=0):
@@ -177,3 +201,20 @@
 # print(matrix)
 
 # QUE 12
+# def count_element(mat, target, r=0, c=0):
+#     if r == len(mat):                          # Base case: all rows are done
+#         return 0
+#     if c == len(mat[0]):                          # End of a row: go to the next row
+#         return count_element(mat, target, r+1 , 0)
+#     if mat[r][c] == target:
+#         return 1 + count_element(mat, target, r, c + 1)
+#     return count_element(mat, target, r, c+1)
+# rows = int(input("Enter the number of rows: "))
+# matrix = []
+# for k in range(rows):
+#     row = []
+#     for value in input().split():
+#         row.append(int(value))
+#     matrix.append(row)
+# target = int(input("Enter the number to count: "))
+# print(target, "appears", count_element(matrix, target), "time(s)")

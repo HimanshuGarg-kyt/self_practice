@@ -17,9 +17,12 @@ class Factory:
 #         self.employee = employee
     
 s = Factory(530,2009,"100cr")
-s.hello()
-s.area = 1000
-s._year = 2009
-print(s.area)
-print(s._year)
-s.hello()
+# s.hello()
+# s.area = 1000
+# s._year = 2009
+# print(s.area)
+# print(s._year)
+# s.hello()
+
+print(dir(Factory))
+print(dir(s))
