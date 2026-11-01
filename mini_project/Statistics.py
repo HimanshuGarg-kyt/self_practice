@@ -74,6 +74,6 @@ class Statistics:
         print(self.a)
         print(self.stDeviation())   
 
-a = Statistics([10, 5, 2, 11, 7, 2, 2, 3, 5])
+a = Statistics([5, 6, 8, 125])
 
 a.show()

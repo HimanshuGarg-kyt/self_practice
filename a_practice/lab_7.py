@@ -217,8 +217,142 @@ import copy
 
 
 # QUE 8
+# class Car:
+#     def __init__(self, name, year):
+#         self.name = name
+#         self.year = year
+#         self.dimension = []
+
+#     def add_dimensions(self, dim):
+#         self.dimension.append(dim)
+
+#     def __str__(self):
+#         return f"{self.name} has dimension {self.dimension}"
+
+# a = Car("G Wagon",2008)
+# a.add_dimensions(3600)
+# a.add_dimensions(1600)
+# a.add_dimensions(1700)
+# print(a)
+
+# class CarBad:
+#     dimensions = []
+
+#     def __init__(self, name, year):
+#         self.name = name
+#         self.year = year
+
+#     def add_dimensions(self, dim):
+#         self.dimensions.append(dim)
+
+#     def __str__(self):
+#         return f"{self.name} has dimensions {self.dimensions}"
+
+
+# c1 = CarBad("Wagon R", 2019)
+# c2 = CarBad("Alto", 2018)
+
+# c1.add_dimensions(3655)
+
+# print(c1)
+# print(c2)
+
+
 
 # QUE 9
+# class BankDetails:
+#     def __init__(self,amount):
+#         self.balance = amount
+
+#     def print_amount(self):
+#         print(f"the amount in bank : {self.balance}")
+
+#     def __add__(self,others):
+#         return BankDetails(self.balance + others.balance)
+
+#     def __sub__(self,others):
+#         if self.balance < others.balance:
+#             print("INSUFFICIENT BALANCE ")
+#             return self.balance
+#         return BankDetails(self.balance - others.balance)
+
+#     def __str__(self):
+#         return f"Balance : {self.balance}"
+
+# c1 = BankDetails(10000)
+# c2 = BankDetails(5000)
+# print(c1 + c2)
+# (c1 + c2).print_amount()
+# print(c2 - c1)
+# print(c1 - c2)
+
+
+
 # QUE 10
+# class Student: 
+#     def __init__(self, marks): 
+#         self.marks = marks 
+ 
+#     def __le__(self, other): 
+#         return self.marks <= other.marks 
+ 
+#     def __ge__(self, other): 
+#         return self.marks >= other.marks 
+ 
+#     def __truediv__(self, other): 
+#         return self.marks // other.marks 
+ 
+#     def __len__(self): 
+#         return len(self.marks) 
+
+#     def __mod__(self,other):
+#         return self.marks % other.marks
+ 
+# s1 = Student(80) 
+# s2 = Student(70) 
+# print(s1 <= s2) 
+# print(s1 >= s2) 
+# print(s1 / s2) 
+# s3 = Student([80, 30, 40]) 
+# print(len(s3)) 
+# print(s1 % s2) 
+
+
+
 # QUE 11
+# class Vector2D:
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+
+#     def __add__(self, other):
+#         return f"({self.x + other.x},{self.y + other.y})"
+
+#     def __sub__(self, other):
+#         return f"({self.x - other.x},{self.y - other.y})"
+
+#     def __mul__(self,a):
+#         return f"{a*self.x,a*self.y}"
+
+#     def __eq__(self, value):
+#         return self.x == value.x and self.y == value.y
+
+#     def __str__(self):
+#         return f"({self.x},{self.y})"
+
+#     def __abs__(self):
+#         return (self.x**2 + self.y**2)**(1/2)
+
+# v1 = Vector2D(4,6)
+# v2 = Vector2D(8,5)
+
+# print(v1 + v2)
+# print(v1 - v2)
+# print(v1 * 5)
+# print(v1 == v2)
+# print(v1)
+# print(abs(v1))
+
+
+
 # QUE 12
