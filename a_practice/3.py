@@ -1,3 +1,8 @@
-import shapes
+class Demo:
+    def __setattr__(self, key, value):
+        print(key, value)
+        self.__dict__[key] = value
 
-print(__name__)
+d = Demo()
+
+d.name = "Himanshu"

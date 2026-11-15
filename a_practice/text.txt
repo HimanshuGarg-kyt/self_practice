@@ -1,0 +1,4 @@
+features of Python
+Python has following properties:
+easy to use: python is said to be programming at the speed ofthought(nice!) .
+simple But powerful: though python is simple, it's as powerful as modern languages .
