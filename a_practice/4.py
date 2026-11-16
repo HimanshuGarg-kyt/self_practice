@@ -1,4 +1,6 @@
-check_even = lambda x: x if x%2==0 else None
-a = [54,6,8,9,59656,464]
-checked = filter(check_even,a)
-print(list(checked))
+import numpy as np
+l = [ 1,[2,3],3,4,5,6,7]
+l1 = l[1:5]
+# l1[0] = 5
+print(l)
+print(l1)
